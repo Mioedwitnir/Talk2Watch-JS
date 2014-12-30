@@ -1,7 +1,3 @@
-Talk2Watch.addEventListener("ready", function(e) {
-    getBtcValue();
-});
-
 function getBtcValue() {
     var response;
     var req = new XMLHttpRequest();
@@ -18,3 +14,4 @@ function getBtcValue() {
     req.send(null);
 }
 
+getBtcValue();
