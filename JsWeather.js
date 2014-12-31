@@ -1,8 +1,3 @@
-Talk2Watch.addEventListener("ready", function(e) {
-    window.navigator.geolocation.getCurrentPosition(locationSuccess,locationError);
-});
-
-
 function locationSuccess(pos) {
   var coordinates = pos.coords;
   fetchWeather(coordinates.latitude, coordinates.longitude);
@@ -42,3 +37,5 @@ function fetchWeather(latitude, longitude) {
     };
     req.send(null);
 }
+
+window.navigator.geolocation.getCurrentPosition(locationSuccess,locationError);
