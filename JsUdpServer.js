@@ -1,5 +1,6 @@
 /*
-	requires Talk2Watch Pro 30.0.3.4
+#ENABLE_RUN_IN_BACKGROUND
+requires Talk2Watch Pro 30.0.3.4
 */
 
 var udpModule = new UdpModule();

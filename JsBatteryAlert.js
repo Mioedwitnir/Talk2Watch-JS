@@ -1,3 +1,8 @@
+/*
+#ENABLE_RUN_IN_BACKGROUND
+requires Talk2Watch Pro 30.0.3.4
+*/
+
 var plaform = new PlatformInterface();
 var batteryLevel = plaform.getBatteryLevel();
 var isCharging = false;
