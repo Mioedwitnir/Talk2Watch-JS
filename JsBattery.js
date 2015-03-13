@@ -1,5 +1,8 @@
-// required Talk2Watch Pro 30.0.3.4
+/*
+	requires Talk2Watch Pro 30.0.3.4
+*/
 
+var plaform = new PlatformInterface();
+var batteryLevel = plaform.getBatteryLevel();
 
-var level = Talk2Watch.getBatteryLevel();
-Talk2Watch.sendSms(String(level) + " %", "[Battery]");
+Talk2Watch.sendSms(String(batteryLevel) + " %", "[Battery]");

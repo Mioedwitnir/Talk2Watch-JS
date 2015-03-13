@@ -1,4 +1,8 @@
-// requires Talk2Watch Pro 30.0.3.4
+/*
+	requires Talk2Watch Pro 30.0.3.4
+*/
 
-var data = Talk2Watch.getClipboardData();
+var plaform = new PlatformInterface();
+var data = plaform.getClipboardData();
+
 Talk2Watch.sendSms(data, "[Clipboard]");
